@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Puzzle15.AboutUsActivity">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:orientation="vertical">
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#252323"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_400sdp"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/img_19"/>
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_400sdp"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/img_22"/>
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_400sdp"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/img_20"/>
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_400sdp"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/img_18"/>
+
+
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_400sdp"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/img_21"/>
+
+            </LinearLayout>
+        </ScrollView>
+
+        <ScrollView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:elevation="4dp"
+                app:cardMaxElevation="4dp"
+                app:cardElevation="4dp"
+                app:cardCornerRadius="@dimen/_8sdp">
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+                    <TextView
+                        android:id="@+id/munisa"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintLeft_toLeftOf="parent"
+                        app:layout_constraintRight_toRightOf="parent"
+                        android:background="#000000"
+                        android:backgroundTint="@color/theme"
+                        android:fontFamily="@font/baloo_tammudu"
+                        android:gravity="center"
+                        android:paddingVertical="@dimen/_5sdp"
+                        android:textColor="@color/whiter"
+                        app:layout_constraintVertical_bias="0.15"
+                        android:text="ushbu ilova Munisa, Muxlisa, Marjona, Xasan va Xusan Abdurahmonovlar uchun maxsus tayyorlandi"
+                        android:textSize="24sp"
+                        android:textStyle="bold" />
+
+                    <!--  <TextView
+                          android:id="@+id/telegram"
+                          android:layout_width="wrap_content"
+                          android:layout_height="wrap_content"
+                          app:layout_constraintTop_toBottomOf="@id/munisa"
+                          app:layout_constraintBottom_toBottomOf="parent"
+                          app:layout_constraintLeft_toLeftOf="parent"
+                          app:layout_constraintRight_toRightOf="parent"
+                          android:text="Taklif va istaklar uchun biz bilan aloqaga chiqing"
+                          android:textColor="@color/white"
+                          android:textSize="18sp"
+                          android:gravity="center"
+                          android:paddingRight="@dimen/_55sdp"
+                          android:paddingLeft="@dimen/_30sdp"
+                          android:paddingVertical="@dimen/_15sdp"
+                          android:background="#000000"
+                          android:textStyle="bold"/>
+
+                          <ImageView
+                              android:layout_width="@dimen/_40sdp"
+                              android:layout_height="@dimen/_40sdp"
+                              android:src="@drawable/telegram"
+                              app:layout_constraintTop_toBottomOf="@id/munisa"
+                              app:layout_constraintBottom_toBottomOf="parent"
+                              app:layout_constraintLeft_toLeftOf="parent"
+                              app:layout_constraintRight_toRightOf="parent"
+                              app:layout_constraintHorizontal_bias="0.97"
+                              android:background="?android:selectableItemBackgroundBorderless"
+                              app:layout_constraintVertical_bias="0.55"/>-->
+
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+            </androidx.cardview.widget.CardView>
+        </ScrollView>
+
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/telegram_luis"
+        android:layout_width="@dimen/_50sdp"
+        android:layout_height="@dimen/_50sdp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintVertical_bias="0.02"
+        app:layout_constraintHorizontal_bias="0.95"
+        android:foreground="?android:selectableItemBackgroundBorderless"
+        android:src="@drawable/telegram"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

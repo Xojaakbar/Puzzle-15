@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/_180sdp"
+    android:background="@drawable/back_dialog"
+    android:padding="0dp">
+
+    <TextView
+        android:id="@+id/which_place"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="@dimen/_130sdp"
+        android:layout_marginLeft="@dimen/_15sdp"
+        android:layout_marginTop="@dimen/_15sdp"
+        android:layout_weight="1"
+        android:fontFamily="@font/baloo_thambi"
+        android:gravity="start"
+        android:text="second place"
+        android:textColor="#FFFFFF"
+        android:textSize="26sp" />
+
+    <TextView
+        android:id="@+id/steps_of_record"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="32 steps"
+        android:textColor="#535050"
+        android:layout_gravity="center|start"
+        android:layout_marginLeft="@dimen/_15sdp"
+        android:layout_marginRight="@dimen/_130sdp"
+        android:layout_marginBottom="@dimen/_30sdp"
+        android:textStyle="bold"
+        android:textSize="22sp"/>
+    <ImageView
+        android:id="@+id/imageOfPlace"
+        android:layout_width="@dimen/_120sdp"
+        android:layout_height="wrap_content"
+        android:src="@drawable/img_5"
+        android:layout_gravity="end"
+        android:paddingHorizontal="@dimen/_10sdp"
+        android:layout_marginRight="@dimen/_15sdp"
+        android:layout_marginVertical="@dimen/_15sdp"/>
+    <TextView
+        android:id="@+id/okay"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:layout_marginBottom="@dimen/_15sdp"
+        android:layout_marginLeft="15dp"
+        android:paddingVertical="@dimen/_10sdp"
+        android:paddingHorizontal="@dimen/_15sdp"
+        android:text="okay"
+        android:background="@drawable/back_okay"
+        android:foreground="?android:selectableItemBackground"
+        android:textStyle="bold"
+        android:clickable="true"
+        android:focusable="true"
+        android:textColor="#F8F8F8"
+        android:textSize="25sp"/>
+</FrameLayout>

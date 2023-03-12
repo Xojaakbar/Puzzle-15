@@ -1,0 +1,190 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Puzzle15.InfoActivity"
+    android:background="@color/whiter"
+    android:orientation="vertical">
+    <ImageView
+    android:id="@+id/back_button"
+    android:layout_width="@dimen/_45sdp"
+    android:layout_height="@dimen/_45sdp"
+    android:paddingLeft="@dimen/_5sdp"
+    android:foreground="?android:selectableItemBackground"
+    android:focusable="true"
+    android:clickable="true"
+    android:padding="5dp"
+    android:src="@drawable/ic_baseline_backspace_24"/>
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center">
+
+        <RelativeLayout
+            android:id="@+id/container_medium"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_250sdp"
+            android:layout_gravity="center"
+            android:gravity="center">
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/btn1"
+                style="@style/GameItem_for_info"
+                android:text="1" />
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/btn2"
+                style="@style/GameItem_for_info"
+                android:layout_toRightOf="@id/btn1"
+                android:text="2" />
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/btn3"
+                style="@style/GameItem_for_info"
+                android:layout_toRightOf="@id/btn2"
+                android:text="3" />
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/btn4"
+                style="@style/GameItem_for_info"
+                android:layout_toRightOf="@id/btn3"
+                android:text="4" />
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/btn5"
+                style="@style/GameItem_for_info"
+                android:layout_below="@id/btn1"
+                android:text="5" />
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/btn6"
+                style="@style/GameItem_for_info"
+                android:layout_below="@id/btn2"
+                android:layout_toRightOf="@id/btn5"
+                android:text="6" />
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/btn7"
+                style="@style/GameItem_for_info"
+                android:layout_below="@id/btn1"
+                android:layout_toRightOf="@id/btn2"
+                android:text="7" />
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/btn8"
+                style="@style/GameItem_for_info"
+                android:layout_below="@id/btn1"
+                android:layout_toRightOf="@id/btn7"
+                android:text="8" />
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/btn9"
+                style="@style/GameItem_for_info"
+                android:layout_below="@id/btn5"
+                android:text="9" />
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/btn10"
+                style="@style/GameItem_for_info"
+                android:layout_below="@id/btn5"
+                android:layout_toRightOf="@id/btn1"
+                android:text="10" />
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/btn11"
+                style="@style/GameItem_for_info"
+                android:layout_below="@id/btn5"
+                android:layout_toRightOf="@id/btn2"
+                android:text="11" />
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/btn12"
+                style="@style/GameItem_for_info"
+                android:layout_below="@id/btn5"
+                android:layout_toRightOf="@id/btn11"
+                android:text="12" />
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/btn13"
+                style="@style/GameItem_for_info"
+                android:layout_below="@id/btn9"
+                android:text="13" />
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/btn14"
+                style="@style/GameItem_for_info"
+                android:layout_below="@id/btn9"
+                android:layout_toRightOf="@id/btn1"
+                android:text="14" />
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/btn15"
+                style="@style/GameItem_for_info"
+                android:layout_below="@id/btn9"
+                android:layout_toRightOf="@id/btn2"
+                android:text="15" />
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/btn16"
+                style="@style/GameItem_for_info"
+                android:layout_below="@id/btn9"
+                android:layout_toRightOf="@id/btn3"
+                android:background="@drawable/back_button"
+                android:text="" />
+
+        </RelativeLayout>
+
+    </androidx.appcompat.widget.LinearLayoutCompat>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:layout_weight="1">
+            <TextView
+                android:paddingVertical="@dimen/_5sdp"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="2"
+                android:fontFamily="@font/baloo_thambi"
+                android:paddingHorizontal="@dimen/_15sdp"
+                android:gravity="center"
+                android:text="You need to sort the numbers in this game! The numbers are ordered from left to right. \n Good luck"
+                  android:textSize="@dimen/_13sdp"
+                android:textColor="@color/theme"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="2"
+                android:fontFamily="@font/andika"
+                android:textColor="@color/theme"
+                android:gravity="center"
+                android:paddingHorizontal="@dimen/_15sdp"
+                android:text="В этой игре вы должны упорядочить номера слева направо! Удачи"
+                android:textSize="@dimen/_13sdp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="2"
+                android:gravity="center|top"
+                android:paddingTop="@dimen/_5sdp"
+                android:paddingBottom="@dimen/_5sdp"
+                android:textColor="@color/theme"
+                android:fontFamily="@font/baloo_thambi"
+                android:paddingHorizontal="@dimen/_15sdp"
+                android:text="Siz bu o'yinda sonlarni ketma-ket terib chiqishingiz talab qilinadi! \n Sonlarni chapdan o'ngga tartiblang. Omad"
+                android:textSize="@dimen/_13sdp"
+                android:textStyle="bold" />
+
+
+
+
+        </LinearLayout>
+
+   </LinearLayout>
